@@ -1,0 +1,16 @@
+name: lint
+
+on:
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: [self-hosted, Linux, ARM64]
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .tool-versions
+      - run: npm ci
+      - run: npm run lint
