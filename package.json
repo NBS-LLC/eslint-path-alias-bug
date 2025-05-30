@@ -1,0 +1,19 @@
+{
+  "name": "eslint-path-alias-bug",
+  "version": "0.0.0",
+  "scripts": {
+    "lint": "expo lint"
+  },
+  "dependencies": {
+    "expo": "53.0.9"
+  },
+  "devDependencies": {
+    "eslint": "9.27.0",
+    "eslint-config-expo": "9.2.0"
+  },
+  "overrides": {
+    "eslint-config-expo": {
+      "eslint-import-resolver-typescript": "4.4.1"
+    }
+  }
+}
