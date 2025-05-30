@@ -5,7 +5,9 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-24.04-arm
+    runs-on: [self-hosted, Linux, ARM64]
+    container:
+      image: debian:bullseye-slim
 
     steps:
       - uses: actions/checkout@v4
