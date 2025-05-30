@@ -11,7 +11,7 @@ const globals = require("globals");
 
 module.exports = defineConfig([
   ...coreConfig,
-  // ...typescriptConfig,
+  ...typescriptConfig,
   // ...reactConfig,
   // ...expoConfig,
   {
