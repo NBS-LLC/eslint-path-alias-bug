@@ -14,37 +14,37 @@ module.exports = defineConfig([
   ...typescriptConfig,
   // ...reactConfig,
   // ...expoConfig,
-  {
-    settings: {
-      "import/extensions": allExtensions,
-      "import/resolver": {
-        node: { extensions: allExtensions },
-      },
-    },
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-        __DEV__: "readonly",
-        ErrorUtils: false,
-        FormData: false,
-        XMLHttpRequest: false,
-        alert: false,
-        cancelAnimationFrame: false,
-        cancelIdleCallback: false,
-        clearImmediate: false,
-        fetch: false,
-        navigator: false,
-        process: false,
-        requestAnimationFrame: false,
-        requestIdleCallback: false,
-        setImmediate: false,
-        window: false,
-        "shared-node-browser": true,
-      },
-    },
-  },
-  {
-    files: ["*.web.*"],
-    ignores: ["dist/*"],
-  },
+  // {
+  //   settings: {
+  //     "import/extensions": allExtensions,
+  //     "import/resolver": {
+  //       node: { extensions: allExtensions },
+  //     },
+  //   },
+  //   languageOptions: {
+  //     globals: {
+  //       ...globals.browser,
+  //       __DEV__: "readonly",
+  //       ErrorUtils: false,
+  //       FormData: false,
+  //       XMLHttpRequest: false,
+  //       alert: false,
+  //       cancelAnimationFrame: false,
+  //       cancelIdleCallback: false,
+  //       clearImmediate: false,
+  //       fetch: false,
+  //       navigator: false,
+  //       process: false,
+  //       requestAnimationFrame: false,
+  //       requestIdleCallback: false,
+  //       setImmediate: false,
+  //       window: false,
+  //       "shared-node-browser": true,
+  //     },
+  //   },
+  // },
+  // {
+  //   files: ["*.web.*"],
+  //   ignores: ["dist/*"],
+  // },
 ]);
