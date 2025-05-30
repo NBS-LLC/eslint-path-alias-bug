@@ -6,6 +6,8 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-22.04-arm
+    container:
+      image: debian:bullseye-slim
 
     steps:
       - uses: actions/checkout@v4
