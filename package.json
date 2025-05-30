@@ -2,7 +2,7 @@
   "name": "eslint-path-alias-bug",
   "version": "0.0.0",
   "scripts": {
-    "lint": "expo lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "expo": "53.0.9"
