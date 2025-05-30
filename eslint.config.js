@@ -10,9 +10,7 @@ module.exports = [
     },
     settings: {
       "import/resolver": {
-        typescript: {
-          project: "./tsconfig.json",
-        },
+        typescript: true
       },
     },
     rules: {
