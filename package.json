@@ -10,5 +10,10 @@
   "devDependencies": {
     "eslint": "9.27.0",
     "eslint-config-expo": "9.2.0"
+  },
+  "overrides": {
+    "eslint-config-expo": {
+      "eslint-import-resolver-typescript": "4.4.1"
+    }
   }
 }
