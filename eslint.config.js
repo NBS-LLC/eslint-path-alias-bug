@@ -10,10 +10,10 @@ const { defineConfig } = require("eslint/config");
 const globals = require("globals");
 
 module.exports = defineConfig([
-  ...coreConfig,
-  ...typescriptConfig,
-  ...reactConfig,
-  ...expoConfig,
+  // ...coreConfig,
+  // ...typescriptConfig,
+  // ...reactConfig,
+  // ...expoConfig,
   {
     settings: {
       "import/extensions": allExtensions,
